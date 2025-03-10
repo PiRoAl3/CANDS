@@ -405,6 +405,14 @@ p {
     transition: 1s;
   }
 
+  .slide{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
 .arrows{
   width: 100px;
   height: 100px;
