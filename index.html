@@ -4,9 +4,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
   <title>CNADS</title>
   <link rel="stylesheet" href="./styles/StyleMain.css">
-  <link rel="stylesheet" href="./style/StyleMain.css">
-  <link rel="stylesheet" href="./style/StyleCarrusel.css">
-  <script src="./js/carrusel.js"></script>
+
 
 </head>
 <body>
@@ -68,11 +66,19 @@
 
     <div class="arrows">
         <div></div>
-        <div class="arrow-up arrow">UP</div>
-        <div class="arrow-down arrow">DOWN</div>
+        <div id="arrow-up" class="arrow-up arrow">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 10.5 12 3m0 0 7.5 7.5M12 3v18" />
+              </svg>              
+        </div>
+        <div id="arrow-down" class="arrow-down arrow">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 13.5 12 21m0 0-7.5-7.5M12 21V3" />
+              </svg>                         
+        </div>
     </div>
 
-    <div class="slide-left">
+    <div id="slide-left" class="slide-left">
         <div class="slide">
             <h4 class="tit">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, dignissimos!</h4>
         </div>
@@ -84,12 +90,13 @@
         </div>
     </div>
 
-    <div class="slide-right">
+    <div id="slide-right" class="slide-right">
         <div class="slide" style = "background-image: url('./img/gen1.jpeg');"></div>
-        <div class="slide imgC"> </div>
-        <div class="slide"></div>
+        <div class="slide" style = "background-image: url('./img/gen2.jpeg');"></div>
+        <div class="slide" style = "background-image: url('./img/gen3.jpg');"></div>
     </div>
   </div>
+
   <!--<div class="slider-frame">
     <ul>
         <li><img src="./img/gen1.jpeg" alt=""></li>
@@ -193,4 +200,5 @@
 
 
 </body>
+<script src="./js/Carrusel.js" defer></script>
 </html>

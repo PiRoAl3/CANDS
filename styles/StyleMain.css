@@ -417,8 +417,8 @@ p {
   width: 100px;
   height: 100px;
   position: fixed;
-  top: calc(50%-50px);
-  left:calc(40%-50px);
+  top: calc(50% - 50px);
+  left: calc(40% - 50px);
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
@@ -435,6 +435,9 @@ p {
   border-top-left-radius: 8px;
   border-bottom-left-radius: 8px;
   cursor: pointer;
+}
+.arrow svg{
+  width: 20px;
 }
 .arrow{
   display: flex;
