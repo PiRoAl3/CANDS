@@ -350,7 +350,7 @@ p {
 .slider-frame ul{
   display: flex;
   padding: 0;
-  width: 2 00%;
+  width: 200%;
 }
 
 .slider-frame li{
@@ -401,7 +401,7 @@ p {
 .slide-right{
     width: 60%;
     height: 100vh;
-    background: rgb(141, 78, 0);
+    background: rgb(87, 81, 75);
     transition: 1s;
   }
 
@@ -416,8 +416,8 @@ p {
 .arrows{
   width: 100px;
   height: 100px;
-  position: fixed;
-  top: calc(50% - 50px);
+  position: absolute;
+  top: calc(50% + 450px);
   left: calc(40% - 50px);
   display: grid;
   grid-template-columns: 1fr 1fr;
