@@ -413,6 +413,11 @@ p {
     align-items: center;
   }
 
+.imgCarr{
+  width: 100px;
+  height: 100px;
+}
+
 .arrows{
   width: 100px;
   height: 100px;
