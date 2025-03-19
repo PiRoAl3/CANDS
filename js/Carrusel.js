@@ -4,10 +4,12 @@
     let slideLeft = document.getElementById('slide-left');
 
     const itemsLenght = (slideLeft.querySelectorAll('.slide').length - 1) * 100;
+    const itemsRightLenght = 0
     slideLeft.style.transform = `translateY(-${itemsLenght}vh)`;
+    slideRight.style.transform= `translateY(${itemsRightLenght}vh)`;
 
-    let trayectoriaRight = 100;
-    let trayectoriaLeft = -200;
+    let trayectoriaRight = 0;
+    let trayectoriaLeft = -itemsLenght;
 
     document.getElementById('arrow-up').addEventListener('click', onUp);
     document.getElementById('arrow-down').addEventListener('click', onDown);
@@ -44,8 +46,8 @@
 
         if (slideRight) {
             slideRight.style.transform = `translateY(${trayectoriaRight}vh)`;
-            trayectoriaRight +=100;
-            if (trayectoriaRight == 300) {
+            trayectoriaRight -=100;
+            if (trayectoriaRight == -300) {
                 trayectoriaRight = 0;
             }   
         } else{
