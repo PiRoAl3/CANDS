@@ -47,7 +47,7 @@
         if (slideRight) {
             slideRight.style.transform = `translateY(${trayectoriaRight}vh)`;
             trayectoriaRight -=100;
-            if (trayectoriaRight == -300) {
+            if (trayectoriaRight == -(slideLeft.querySelectorAll('.slide').length ) * 100  ) {
                 trayectoriaRight = 0;
             }   
         } else{
