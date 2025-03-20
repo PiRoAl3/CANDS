@@ -32,7 +32,7 @@
         if (slideLeft) {
             slideLeft.style.transform = `translateY(${trayectoriaLeft}vh)`;
             if (trayectoriaLeft == 0) {
-                trayectoriaLeft = -300;
+                trayectoriaLeft = -itemsLenght;
             }   
         } else{
             console.warn("El elemento no esta");
@@ -47,7 +47,7 @@
         if (slideRight) {
             slideRight.style.transform = `translateY(${trayectoriaRight}vh)`;
             trayectoriaRight -=100;
-            if (trayectoriaRight == -(slideLeft.querySelectorAll('.slide').length ) * 100  ) {
+            if (trayectoriaRight == -(slideRight.querySelectorAll('.slide').length ) * 100  ) {
                 trayectoriaRight = 0;
             }   
         } else{
