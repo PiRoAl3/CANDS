@@ -4,7 +4,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
   <title>CNADS</title>
   <link rel="stylesheet" href="./styles/StyleMain.css">
-  <!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="./styles/StyleAp3.css">
 
 
 </head>
@@ -25,11 +26,11 @@
       <nav class="navbarPropio">
             
         <ul class="menu">
-            <li ><a href="#">Inicio</a></li>
+            <li ><a href="./index.html">Inicio</a></li>
             <li><a href="./Ap1.html">Apartado 1</a></li>
             <li><a href="./Ap2.html">Apartado 2</a></li>
             <!--<li><a href="#" target="_blank">Laboratorio de materiales</a></li>-->
-            <li><a href="./Ap3.html">Apartado 3</a></li>
+            <li><a href="#">Apartado 3</a></li>
             <li><a href="#">Apartado 4</a></li>
             <li><a href="#">Apartado 5</a></li>
         </ul>
@@ -63,57 +64,73 @@
   </section>-->
   <!-- Fin de Seccion de Bienvenida ================================================================================== -->  
    
-  <div class="container">
+  <h1>CSS-only Carousel</h1>
 
-    <div class="arrows">
-        <div></div>
-        <div id="arrow-up" class="arrow-up arrow">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 10.5 12 3m0 0 7.5 7.5M12 3v18" />
-              </svg>              
-        </div>
-        <div id="arrow-down" class="arrow-down arrow">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 13.5 12 21m0 0-7.5-7.5M12 21V3" />
-              </svg>                         
-        </div>
-    </div>
+<p>This carousel is created with HTML and CSS only.</p>
 
-    <div id="slide-left" class="slide-left">
-        <div class="slide slidel">
-            <h4 class="tit">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, dignissimos!</h4>
-        </div>
-        <div class="slide slidel">
-            <h4 class="tit">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore, tempore.</h4>
-        </div>
-        <div class="slide slidel">
-            <h4 class="tit">Lorem ipsum, dolor sit amet consectetur adipisicing elit. A, molestias?</h4>
-        </div>
-    </div>
+<section class="carousel" aria-label="Gallery">
+  <ol class="carousel__viewport">
+    <li id="carousel__slide1"
+        tabindex="0"
+        class="carousel__slide">
+      <div class="carousel__snapper">
+        <a href="#carousel__slide4"
+           class="carousel__prev">Go to last slide</a>
+        <a href="#carousel__slide2"
+           class="carousel__next">Go to next slide</a>
+      </div>
+    </li>
+    <li id="carousel__slide2"
+        tabindex="0"
+        class="carousel__slide">
+      <div class="carousel__snapper"></div>
+      <a href="#carousel__slide1"
+         class="carousel__prev">Go to previous slide</a>
+      <a href="#carousel__slide3"
+         class="carousel__next">Go to next slide</a>
+    </li>
+    <li id="carousel__slide3"
+        tabindex="0"
+        class="carousel__slide">
+      <div class="carousel__snapper"></div>
+      <a href="#carousel__slide2"
+         class="carousel__prev">Go to previous slide</a>
+      <a href="#carousel__slide4"
+         class="carousel__next">Go to next slide</a>
+    </li>
+    <li id="carousel__slide4"
+        tabindex="0"
+        class="carousel__slide">
+      <div class="carousel__snapper"></div>
+      <a href="#carousel__slide3"
+         class="carousel__prev">Go to previous slide</a>
+      <a href="#carousel__slide1"
+         class="carousel__next">Go to first slide</a>
+    </li>
+  </ol>
+  <aside class="carousel__navigation">
+    <ol class="carousel__navigation-list">
+      <li class="carousel__navigation-item">
+        <a href="#carousel__slide1"
+           class="carousel__navigation-button">Go to slide 1</a>
+      </li>
+      <li class="carousel__navigation-item">
+        <a href="#carousel__slide2"
+           class="carousel__navigation-button">Go to slide 2</a>
+      </li>
+      <li class="carousel__navigation-item">
+        <a href="#carousel__slide3"
+           class="carousel__navigation-button">Go to slide 3</a>
+      </li>
+      <li class="carousel__navigation-item">
+        <a href="#carousel__slide4"
+           class="carousel__navigation-button">Go to slide 4</a>
+      </li>
+    </ol>
+  </aside>
+</section>
 
-    <div id="slide-right" class="slide-right">
   
-            <li class="slide">
-                <img class="imgCarr" src="./img/gen3.jpg" alt="">
-            </li>
-            <li class="slide">
-                <img class="imgCarr" src="./img/gen2.jpeg" alt="">
-            </li class>
-            <li class="slide">
-                <img class="imgCarr" src="./img/gen1.jpeg" alt="">
-            </li> 
-            <li class="slide">
-                <img class="imgCarr" src="./img/gen1.jpeg" alt="">
-            </li> 
-            <li class="slide">
-                <img class="imgCarr" src="./img/gen1.jpeg" alt="">
-            </li>    
-        
-    </div>
-    
-  </div>
-   <!--Fin del carrusel-->
-
     <!--Footer, la seccion del Coppyrihgt-->
     <section>
         <footer>
@@ -129,7 +146,10 @@
 
   </section> <!--seccion que va desde el inicio-->
 
-
+  <script src="./js/Carrusel.js" defer></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
-<script src="./js/Carrusel.js" defer></script>
+
 </html>
