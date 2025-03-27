@@ -58,7 +58,6 @@ body #scene #left-zone .list {
     flex-grow: 1;
     margin: 0;
     padding: 0;
-    position: absolute;
 }
 body #scene #left-zone .list li.item input[type="radio"] {
     display: none;
@@ -146,6 +145,7 @@ body #scene #left-zone .list li.item input[type="radio"] ~ .content.content_stra
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    
 }
 body #scene #left-zone .list li.item input[type="radio"] ~ .content.content_strawberry h1 {
     color: #d64541;
@@ -228,5 +228,5 @@ body #scene #right-zone {
     background: #fff;
     height: 100%;
     flex-grow: 3;
-    position: absolute;
+    position:static;
 }
