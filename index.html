@@ -4,6 +4,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
   <title>CNADS</title>
   <link rel="stylesheet" href="./styles/StyleMain.css">
+  <link rel="stylesheet" href="./styles/StyleAp4.css">
   <!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">-->
 
 
@@ -45,71 +46,62 @@
       <p  class="h7">Cluster Nacional Ambiental y Desarollo Sustentable<p>
     </div>
   </section>
-  <!-- Fin de Seccion de Titulo ====================================================================================== -->   
-
-  <!-- Seccion de Bienvenida ========================================================================================= -->   
- <!-- <section class="bienvenida">
-    <p class="h8">CNADS</p>
-    <div class="contenedor">
-        <div class="txtM">
-            <p><strong>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, adipisci? Omnis, deleniti. Libero facere 
-                accusantium cupiditate magni voluptatibus, eaque quis deserunt, maxime maiores quam tempore? Recusandae dolores 
-                sit mollitia soluta.</strong>
-        </div>
-      </p>
-      <P></P>
-      <P></P>
-    </div>
-  </section>-->
-  <!-- Fin de Seccion de Bienvenida ================================================================================== -->  
    
   <div class="container">
 
-    <div class="arrows">
-        <div></div>
-        <div id="arrow-up" class="arrow-up arrow">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 10.5 12 3m0 0 7.5 7.5M12 3v18" />
-              </svg>              
-        </div>
-        <div id="arrow-down" class="arrow-down arrow">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 13.5 12 21m0 0-7.5-7.5M12 21V3" />
-              </svg>                         
-        </div>
-    </div>
-
-    <div id="slide-left" class="slide-left">
-        <div class="slide slidel">
-            <h4 class="tit">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, dignissimos!</h4>
-        </div>
-        <div class="slide slidel">
-            <h4 class="tit">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore, tempore.</h4>
-        </div>
-        <div class="slide slidel">
-            <h4 class="tit">Lorem ipsum, dolor sit amet consectetur adipisicing elit. A, molestias?</h4>
-        </div>
-    </div>
-
-    <div id="slide-right" class="slide-right">
-  
-            <li class="slide">
-                <img class="imgCarr" src="./img/gen3.jpg" alt="">
+    <div id="flex-container" class="testimonials">
+        <div id="left-zone">
+          <ul class="list">
+            <li class="item">
+              <input type="radio" id="radio_testimonial-1" name="basic_carousel" checked="checked" />
+              <label class="label_testimonial-1" for="radio_testimonial-1">Diamond Pest Elimination</label>
+              <div class="content-test content_testimonial-1">
+                <span class="picto"></span>
+                <h1>Diamond Pest Elimination</h1>
+                <p>“The team really takes pride in their work. If I didn’t know any better I would think they actually worked for my company.”</p>
+                <p class="testimonialFrom">Bill, Owner</p>
+                <p class="testimonialState">Rochester, NY</p>
+              </div>
             </li>
-            <li class="slide">
-                <img class="imgCarr" src="./img/gen2.jpeg" alt="">
-            </li class>
-            <li class="slide">
-                <img class="imgCarr" src="./img/gen1.jpeg" alt="">
-            </li> 
-            <li class="slide">
-                <img class="imgCarr" src="./img/gen1.jpeg" alt="">
-            </li> 
-            <li class="slide">
-                <img class="imgCarr" src="./img/gen1.jpeg" alt="">
-            </li>    
-        
-    </div>
+            <li class="item">
+              <input type="radio" id="radio_testimonial-2" name="basic_carousel" />
+              <label class="label_testimonial-2" for="radio_testimonial-2">A+ Handyman Service</label>
+              <div class="content-test content_testimonial-2">
+                <span class="picto"></span>
+                <h1>A+ Handyman Service</h1>
+                <p>“Quite simply… the service offers prompt response time to my visitors and helps me to better know what type of project a potential customer wants.”</p>
+                <p class="testimonialFrom">Bill, Owner</p>
+                <p class="testimonialState">Tucson, AZ</p>
+                <br>
+              </div>
+            </li>
+            <li class="item">
+              <input type="radio" id="radio_testimonial-3" name="basic_carousel" />
+              <label class="label_testimonial-3" for="radio_testimonial-3">Mod Movers</label>
+              <div class="content-test content_testimonial-3">
+                <span class="picto"></span>
+                <h1>Mod Movers</h1>
+                <p>“I couldn’t believe it. I actually had to hire someone to help me keep up with the new business. I had no idea my website had so much value.”</p>
+                <p class="testimonialFrom">Marlene, Owner</p>
+                <p class="testimonialState">Monterey, CA</p>
+              </div>
+            </li>
+            <li class="item">
+              <input type="radio" id="radio_testimonial-4" name="basic_carousel" />
+              <label class="label_testimonial-4" for="radio_testimonial-4">AK Pest Control</label>
+              <div class="content-test content_testimonial-4">
+                <span class="picto"></span>
+                <h1>AK Pest Control</h1>
+                <p>Great company to send leads. Very efficient and pleased with the services. We get lots of leads and that whats important. Support is also great from the managers/support. Thanks YPC Chat</p>
+                <p class="testimonialFrom">Mark, Owner</p>
+                <p class="testimonialState">Somerset, VA</p>
+                <br>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div id="right-zone"></div>
+      </div>
     
   </div>
    <!--Fin del carrusel-->
@@ -131,5 +123,5 @@
 
 
 </body>
-<script src="./js/Carrusel.js" defer></script>
+<script src="./js/carruselAp4.js" defer></script>
 </html>
