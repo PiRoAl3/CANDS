@@ -151,7 +151,7 @@
     }
   
     .content-test {
-      width: 95%;
+      width: 75%;
       height: 100%;
       pointer-events: auto;
       -webkit-transform: translateY(-100%);
@@ -161,7 +161,7 @@
   
     #left-zone {
       height: 100%;
-      width: 5%;
+      width: 25%;
     }
   
     #right-zone {
