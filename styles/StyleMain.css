@@ -389,6 +389,7 @@ p {
     height: 100vh; /*view x high*/
     display: flex;
     overflow: hidden;
+    padding: 1%;
   }
 
 .slide-left{
@@ -470,6 +471,7 @@ p {
   justify-content: center;
   margin: 0px auto;
   width: 100%;
+  padding: 2%;
 }
 
 .foto-info {
