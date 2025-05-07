@@ -17,9 +17,9 @@
     max-width: 10000px;
     margin: auto;
     background-color: #fff;
-    -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12),
+    /*-webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12),
       0 1px 2px rgba(0, 0, 0, 0.24);
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);*/
     overflow: hidden;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -138,7 +138,7 @@
       -ms-flex-direction: row;
       flex-direction: row;
       min-height: auto;
-      height: 70%;
+      height: 90%;
       /* position: absolute; */
       top: 0;
       bottom: 0;
@@ -271,13 +271,13 @@
   }
   
   input:checked ~ label.label_testimonial-1 {
-    color: #d64541;
-    border-right: solid 4px #d64541;
+    color: #1c793f;
+    border-right: solid 4px #1c793f;
   }
   
   input:checked ~ label.label_testimonial-2 {
-    color: #f5d76e;
-    border-right: solid 4px #f5d76e;
+    color: #1d8f48;
+    border-right: solid 4px #1d8f48;
   }
   
   input:checked ~ label.label_testimonial-3 {
@@ -286,8 +286,8 @@
   }
   
   input:checked ~ label.label_testimonial-4 {
-    color: #f27935;
-    border-right: solid 4px #f27935;
+    color: #73814b;
+    border-right: solid 4px #73814b;
   }
   
   
@@ -305,11 +305,11 @@
       left top,
       right top,
       from(#ffffff),
-      to(#d64541a3)
+      to(#8adfb0)
     );
-    background-image: -webkit-linear-gradient(left, #ffffff, #d64541a3);
-    background-image: -o-linear-gradient(left, #ffffff, #d64541a3);
-    background-image: linear-gradient(to right, #ffffff, #d64541a3);
+    background-image: -webkit-linear-gradient(left, #ffffff, #8adfb0);
+    background-image: -o-linear-gradient(left, #ffffff, #8adfb0);
+    background-image: linear-gradient(to right, #ffffff, #8adfb0);
     font-size: 1.2rem;
     -webkit-transition: font-size 0.5s;
     -o-transition: font-size 0.5s;
@@ -322,11 +322,11 @@
       left top,
       right top,
       from(#ffffff),
-      to(#f5d76e59)
+      to(#68eea4)
     );
-    background-image: -webkit-linear-gradient(left, #ffffff, #f5d76e59);
-    background-image: -o-linear-gradient(left, #ffffff, #f5d76e59);
-    background-image: linear-gradient(to right, #ffffff, #f5d76e59);
+    background-image: -webkit-linear-gradient(left, #ffffff, #68eea4);
+    background-image: -o-linear-gradient(left, #ffffff, #68eea4);
+    background-image: linear-gradient(to right, #ffffff, #68eea4);
     font-size: 1.2rem;
     -webkit-transition: font-size 0.5s;
     -o-transition: font-size 0.5s;
@@ -339,11 +339,11 @@
       left top,
       right top,
       from(#ffffff),
-      to(#00b16aa3)
+      to(#7fc28ea3)
     );
-    background-image: -webkit-linear-gradient(left, #ffffff, #00b16aa3);
-    background-image: -o-linear-gradient(left, #ffffff, #00b16aa3);
-    background-image: linear-gradient(to right, #ffffff, #00b16aa3);
+    background-image: -webkit-linear-gradient(left, #ffffff, #7fc28ea3);
+    background-image: -o-linear-gradient(left, #ffffff, #7fc28ea3);
+    background-image: linear-gradient(to right, #ffffff, #7fc28ea3);
     font-size: 1.2rem;
     -webkit-transition: font-size 0.5s;
     -o-transition: font-size 0.5s;
@@ -356,11 +356,11 @@
       left top,
       right top,
       from(#ffffff),
-      to(#f27935a3)
+      to(#c1e778a3)
     );
-    background-image: -webkit-linear-gradient(left, #ffffff, #f27935a3);
-    background-image: -o-linear-gradient(left, #ffffff, #f27935a3);
-    background-image: linear-gradient(to right, #ffffff, #f27935a3);
+    background-image: -webkit-linear-gradient(left, #ffffff, #c1e778a3);
+    background-image: -o-linear-gradient(left, #ffffff, #c1e778a3);
+    background-image: linear-gradient(to right, #ffffff, #c1e778a3);
     font-size: 1.2rem;
     -webkit-transition: font-size 0.5s;
     -o-transition: font-size 0.5s;
