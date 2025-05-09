@@ -3,22 +3,37 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
   <title>CNADS</title>
-  <link rel="stylesheet" href="./styles/StyleMain.css">
-  <link rel="stylesheet" href="./styles/StyleAp4.css">
-  <!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">-->
-
+  <link rel="stylesheet" href="./styles/StyleMain.css"><link rel="stylesheet" href="./styles/StyleAp5.css">
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
 
 </head>
 <body>
   <section class="pagina">
     <!--Encabezado  ============================================================================================= -->
-    <header class="header">
-        <div class="image">
-            <a href="./index.html">
-                <img src="./img/v915-techi-034-l.jpg" height="30%" alt="Imagen de encabezado">
-            </a>
+    <div id="carouselFade" class="carousel slide carousel-fade" data-ride="carousel">
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">  
+                <div class="carousel-caption">
+                  <h3>First slide label</h3>
+                  <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                </div>
+            </div>
+            <div class="item"> 
+                <div class="carousel-caption">
+                  <h3>Second slide label</h3>
+                  <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                </div>
+            </div>
+            <div class="item"> 
+                <div class="carousel-caption">
+                  <h3>Third slide label</h3>
+                  <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                </div>
+            </div>
         </div>
-    </header>
+    </div>
     <!--Fin del encabezado  ============================================================================================= -->
     
     <!-- Inicio del menu  ============================================================================================= -->
@@ -26,7 +41,7 @@
       <nav class="navbarPropio">
             
         <ul class="menu">
-            <li ><a href="#">Inicio</a></li>
+            <li ><a href="./index.html">Inicio</a></li>
             <li><a href="./Ap1.html">Apartado 1</a></li>
             <li><a href="./Ap2.html">Apartado 2</a></li>
             <!--<li><a href="#" target="_blank">Laboratorio de materiales</a></li>-->
@@ -59,67 +74,7 @@
    <!-- Fin seccion de texto ============================================================================================= -->   
 
   <!-- Seccion de carrusel ============================================================================================= -->  
-  <section class="carrusel">
-    <div class="container">
-      <div id="flex-container" class="testimonials">
-          <div id="left-zone">
-            <ul class="list">
-              <li class="item">
-                <input type="radio" id="radio_testimonial-1" name="basic_carousel" checked="checked" />
-                <label class="label_testimonial-1" for="radio_testimonial-1">CONTRIBUIR</label>
-                <div class="content-test content_testimonial-1">
-                  <span class="picto"></span>
-                  <h1>Contribuir</h1>
-                  <p>a las políticas que afectarán al sector en un futuro próximo.</p>
-                  <p class="testimonialFrom"></p>
-                  <p class="testimonialState"></p>
-                </div>
-              </li>
-              <li class="item">
-                <input type="radio" id="radio_testimonial-2" name="basic_carousel" />
-                <label class="label_testimonial-2" for="radio_testimonial-2">PARTICIPAR</label>
-                <div class="content-test content_testimonial-2">
-                  <span class="picto"></span>
-                  <h1>Participar</h1>
-                  <p>en proyectos para el desarrollo de nuevos métodos y tecnologías que cuntribuyan a 
-                    minimizar los impactos ambientales.</p>
-                  <p class="testimonialFrom"></p>
-                  <p class="testimonialState"></p>
-                  <br>
-                </div>
-              </li>
-              <li class="item">
-                <input type="radio" id="radio_testimonial-3" name="basic_carousel" />
-                <label class="label_testimonial-3" for="radio_testimonial-3">DIFUNDIR Y TRANSMITIR</label>
-                <div class="content-test content_testimonial-3">
-                  <span class="picto"></span>
-                  <h1>Difundir y Transmitir</h1>
-                  <p>conocimiento científico que ayude a la sociedad a comprender el concepto de impactos ambientales, 
-                    desarrollo sustentable y economía circular, así como la importancia de conocer los avances e innovaciones 
-                    para las mejoras en los procesos productivos que minimizan los impactos al ambiente.</p>
-                  <p class="testimonialFrom"></p>
-                  <p class="testimonialState"></p>
-                </div>
-              </li>
-              <li class="item">
-                <input type="radio" id="radio_testimonial-4" name="basic_carousel" />
-                <label class="label_testimonial-4" for="radio_testimonial-4">PROPORCIONAR</label>
-                <div class="content-test content_testimonial-4">
-                  <span class="picto"></span>
-                  <h1>Proporcionar</h1>
-                  <p>formación y habilidades a los profesionales del futuro, 
-                    permitiendo así el desarrollo de la industria sostenible del siglo XXI.</p>
-                  <p class="testimonialFrom"></p>
-                  <p class="testimonialState"></p>
-                  <br>
-                </div>
-              </li>
-            </ul>
-          </div>
-          <div id="right-zone"></div>
-        </div>
-    </div>
-  </section>
+  
    <!--Fin del carrusel =============================================================================================-->
 
    <!--Inicio mision y vision =============================================================================================-->
@@ -175,6 +130,19 @@
   </section> <!--seccion que va desde el inicio-->
 
 
-</body>
-<script src="./js/carruselAp4.js" defer></script>
+</body><!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+<script src="./js/CarruselAp5.js"></script>
 </html>
+
+
+
+
+
+
+
+
+    
+    
